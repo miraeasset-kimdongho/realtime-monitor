@@ -33,9 +33,16 @@ button.secondary{background:#666;padding:6px 12px;width:auto;font-size:12px}
 .progress{display:inline-block;width:12px;height:12px;border:2px solid #ccc;border-top-color:#1f3b6e;border-radius:50%;animation:spin 1s linear infinite;vertical-align:middle;margin-right:4px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .empty{color:#999;text-align:center;padding:10px;font-size:13px;font-style:italic}
+.update-banner{display:none;background:#fff8e1;border-left:4px solid #f9a825;border-radius:6px;padding:8px 12px;margin-bottom:8px;font-size:13px}
+.update-banner a{color:#e65100;font-weight:700;text-decoration:none}
+.update-banner a:hover{text-decoration:underline}
+.version-footer{text-align:right;font-size:11px;color:#bbb;margin-top:10px}
 </style>
 </head>
 <body>
+<div class="update-banner" id="updateBanner">
+  ⚠️ <a id="updateLink" href="#" target="_blank"><span id="updateText"></span></a>
+</div>
 <h3>💰 실시간 가격 모니터</h3>
 
 <div class="section">
@@ -110,6 +117,7 @@ button.secondary{background:#666;padding:6px 12px;width:auto;font-size:12px}
 대상: 양지파인, 한림용인, 포웰안성, 파인스톤, 클럽72, 더크로스비, 여주신라, 360도<br>
 ※ 로그인 상태에서만 동작
 </div>
+<div class="version-footer" id="versionFooter"></div>
 
 <script src="popup.js"></script>
 </

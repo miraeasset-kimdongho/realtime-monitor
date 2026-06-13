@@ -159,7 +159,30 @@ document.getElementById('clearLogs').addEventListener('click', async () => {
   await loadLogs();
 });
 
+async function checkForUpdate() {
+  const manifest = chrome.runtime.getManifest();
+  const current = manifest.version;
+  document.getElementById('versionFooter').textContent = `v${current}`;
+
+  try {
+    const cfg = currentCfg || await send({type:'getConfig'});
+    const repo = (cfg.github && cfg.github.repo) || 'miraeasset-kimdongho/realtime-monitor';
+    const r = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
+      headers: {'Accept': 'application/vnd.github+json'}
+    });
+    if (!r.ok) return;
+    const data = await r.json();
+    const latest = (data.tag_name || '').replace(/^v/, '');
+    if (latest && latest !== current) {
+      const banner = document.getElementById('updateBanner');
+      document.getElementById('updateText').textContent = `새 버전 v${latest} 업데이트 있음 →`;
+      document.getElementById('updateLink').href = data.html_url;
+      banner.style.display = 'block';
+    }
+  } catch (_) { /* 조용히 무시 */ }
+}
+
 loadStatus();
 loadAlerts();
-loadConfig();
+loadConfig().then(checkForUpdate);
 loadLogs();
