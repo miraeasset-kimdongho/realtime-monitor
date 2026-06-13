@@ -49,13 +49,17 @@ async function loadAlerts() {
     return;
   }
   alertsListEl.innerHTML = alerts.slice(0, 30).map(a => {
+    const isNew = a.kind === 'new' || a.direction === 'new';
     const direction = a.direction === 'down' ? 'down' : '';
     const diffClass = a.direction === 'down' ? 'diff-down' : 'diff-up';
     const arrow = a.direction === 'down' ? '↓' : '↑';
+    const priceHtml = isNew
+      ? `<span class="diff-up">신규 ${a.newPrice} ✨</span>`
+      : `${a.oldPrice} → <span class="${diffClass}">${a.newPrice} ${arrow}</span>`;
     return `<div class="alert-item ${direction}">
       <span class="ts">${fmtTime(a.ts)}</span>
       <b>${a.club}</b> ${a.date?.substring(5) || ''} ${a.course} ${a.time}<br>
-      ${a.oldPrice} → <span class="${diffClass}">${a.newPrice} ${arrow}</span>
+      ${priceHtml}
     </div>`;
   }).join('');
 }

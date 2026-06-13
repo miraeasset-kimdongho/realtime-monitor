@@ -223,15 +223,22 @@ async function runCheck(triggerType) {
     const updated = [...newAlerts, ...alerts].slice(0, 100);
     await chrome.storage.local.set({ alerts: updated });
 
-    // Chrome 알림
+    // Chrome 알림 (변동 감지 시점)
     try {
+      const newCnt = changes.filter(c => c.kind === 'new').length;
+      const priceCnt = changes.length - newCnt;
+      const titleParts = [];
+      if (priceCnt) titleParts.push(`가격변동 ${priceCnt}`);
+      if (newCnt) titleParts.push(`신규 ${newCnt}`);
       chrome.notifications.create('priceChange-' + Date.now(), {
         type: 'basic',
         iconUrl: 'icon.png',
-        title: `💰 가격 변동 ${changes.length}건 감지!`,
-        message: changes.slice(0, 3).map(c => `${c.club} ${c.date.substring(5)} ${c.time} ${c.oldPrice}→${c.newPrice}`).join('\n'),
-        priority: 2
+        title: `💰 ${titleParts.join(' · ')} 감지!`,
+        message: changes.slice(0, 5).map(fmtChangeLine).join('\n'),
+        priority: 2,
+        requireInteraction: true // 사용자가 닫을 때까지 유지 (놓치지 않도록)
       });
+      await logEvent('INFO', 'notify_sent', { total: changes.length, priceCnt, newCnt });
     } catch (e) {
       await logEvent('WARN', 'notification_fail', e?.message);
     }
@@ -263,17 +270,29 @@ function detectChanges(oldData, newData) {
   const changes = [];
   for (const [clubId, byDate] of Object.entries(newData)) {
     const club = COURSES.find(c => c.id === clubId)?.name || clubId;
+    const oldByDate = oldData[clubId] || {};
     for (const [date, items] of Object.entries(byDate)) {
-      const oldItems = oldData[clubId]?.[date] || [];
+      const oldItems = oldByDate[date] || [];
+      // 이 (클럽,날짜)를 이전에 "수집"한 적 있는지 (빈 배열이어도 키가 있으면 true).
+      // 0건이었다가 타임이 열린 경우(가장 가치 있는 알림)를 잡기 위함.
+      const seenBefore = Object.prototype.hasOwnProperty.call(oldByDate, date);
       // 시간+코스를 키로
       const oldMap = {};
       oldItems.forEach(o => oldMap[`${o.course}|${o.time}`] = o.price);
       items.forEach(n => {
         const k = `${n.course}|${n.time}`;
         const oldPrice = oldMap[k];
-        if (oldPrice && oldPrice !== n.price) {
+        if (oldPrice === undefined) {
+          // 신규 타임 — 단, 이전 스냅샷이 있을 때만 알림 (최초 실행 폭주 방지)
+          if (seenBefore) {
+            changes.push({
+              kind: 'new', club, date, course: n.course, time: n.time,
+              oldPrice: null, newPrice: n.price, direction: 'new'
+            });
+          }
+        } else if (oldPrice !== n.price) {
           changes.push({
-            club, date, course: n.course, time: n.time,
+            kind: 'price', club, date, course: n.course, time: n.time,
             oldPrice, newPrice: n.price,
             direction: parsePrice(n.price) < parsePrice(oldPrice) ? 'down' : 'up'
           });
@@ -282,6 +301,15 @@ function detectChanges(oldData, newData) {
     }
   }
   return changes;
+}
+
+// 알림/로그 표시용 한 줄 포맷
+function fmtChangeLine(c) {
+  const d = c.date ? c.date.substring(5) : '';
+  if (c.kind === 'new' || c.direction === 'new') {
+    return `${c.club} ${d} ${c.time} 신규 ${c.newPrice}`;
+  }
+  return `${c.club} ${d} ${c.time} ${c.oldPrice}→${c.newPrice}`;
 }
 
 function parsePrice(s) {
@@ -348,7 +376,7 @@ async function pushChangesToGitHub(changes, cfg, triggerType) {
   // 2) 변동분 append
   const now = Date.now();
   const lines = changes.map(c => JSON.stringify({
-    ts: now, trigger: triggerType,
+    ts: now, trigger: triggerType, kind: c.kind || 'price',
     club: c.club, date: c.date, course: c.course, time: c.time,
     oldPrice: c.oldPrice, newPrice: c.newPrice, direction: c.direction
   })).join('\n') + '\n';
