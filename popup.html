@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+body{width:420px;padding:18px;font-family:'Malgun Gothic',sans-serif;font-size:14px;margin:0}
+h3{margin:0 0 12px;color:#1f3b6e;font-size:18px}
+.section{background:#f5f5f5;padding:10px 12px;border-radius:6px;margin:8px 0}
+.section.alerts{background:#fff3e0;border-left:4px solid #f57c00}
+.section .label{font-weight:600;color:#1f3b6e;font-size:13px;margin-bottom:6px}
+.status{font-size:13px;color:#666;line-height:1.5}
+.row{display:flex;align-items:center;justify-content:space-between;margin:6px 0}
+.row label{flex:1;font-size:13px}
+.row input[type=number]{width:60px;padding:4px;border:1px solid #ccc;border-radius:3px;font-size:13px}
+.row input[type=checkbox]{transform:scale(1.2);margin-right:6px}
+button{padding:10px 16px;background:#1f3b6e;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;width:100%;margin-top:4px}
+button:hover{background:#15294b}
+button:disabled{background:#999}
+button.secondary{background:#666;padding:6px 12px;width:auto;font-size:12px}
+.alert-item{padding:6px 10px;margin:4px 0;background:#fff;border-radius:4px;font-size:12px;border-left:3px solid #c62828}
+.alert-item.down{border-left-color:#1976d2}
+.alert-item .ts{color:#999;font-size:11px;float:right}
+.alert-item .diff-up{color:#c62828;font-weight:700}
+.alert-item .diff-down{color:#1976d2;font-weight:700}
+.note{font-size:11px;color:#666;margin-top:8px;line-height:1.4}
+.row input[type=text],.row input[type=password]{flex:1;padding:4px;border:1px solid #ccc;border-radius:3px;font-size:12px;margin-left:6px;min-width:0}
+.row.col{flex-direction:column;align-items:stretch}
+.row.col label{margin-bottom:3px}
+.row.col input{margin-left:0}
+.logs{max-height:160px;overflow-y:auto;background:#1e1e1e;border-radius:4px;padding:6px;font-family:Consolas,monospace;font-size:10px;line-height:1.4;margin-top:6px}
+.log-line{white-space:pre-wrap;word-break:break-all;margin:1px 0}
+.log-INFO{color:#9cdcfe}.log-WARN{color:#dcdcaa}.log-ERROR{color:#f48771}
+.progress{display:inline-block;width:12px;height:12px;border:2px solid #ccc;border-top-color:#1f3b6e;border-radius:50%;animation:spin 1s linear infinite;vertical-align:middle;margin-right:4px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.empty{color:#999;text-align:center;padding:10px;font-size:13px;font-style:italic}
+</style>
+</head>
+<body>
+<h3>💰 실시간 가격 모니터</h3>
+
+<div class="section">
+  <div class="label">📡 모니터링 상태</div>
+  <div class="status" id="status">로딩 중...</div>
+  <button id="checkNow" style="margin-top:8px">지금 바로 확인</button>
+</div>
+
+<div class="section alerts">
+  <div class="label" style="display:flex;justify-content:space-between;align-items:center">
+    <span>🚨 가격변동 알림 <span id="alertCount">(0)</span></span>
+    <button class="secondary" id="clearAlerts">전체 지우기</button>
+  </div>
+  <div id="alertsList"><div class="empty">변동 없음</div></div>
+</div>
+
+<div class="section">
+  <div class="label">⚙️ 설정</div>
+  <div class="row">
+    <label>자동 감시 ON/OFF</label>
+    <input type="checkbox" id="enabled">
+  </div>
+  <div class="row">
+    <label>감시 간격 (분)</label>
+    <input type="number" id="intervalMin" min="5" max="60" step="5">
+  </div>
+  <div class="row">
+    <label>감시 날짜 범위 (오늘+N일)</label>
+    <input type="number" id="daysAhead" min="0" max="7">
+  </div>
+  <button class="secondary" id="saveConfig" style="margin-top:4px">설정 저장</button>
+</div>
+
+<div class="section">
+  <div class="label">🐙 GitHub 로그 푸시</div>
+  <div class="row">
+    <label>변동 시 GitHub 커밋</label>
+    <input type="checkbox" id="ghEnabled">
+  </div>
+  <div class="row col">
+    <label>저장소 (owner/repo)</label>
+    <input type="text" id="ghRepo" placeholder="miraeasset-kimdongho/realtime-monitor">
+  </div>
+  <div class="row col">
+    <label>브랜치</label>
+    <input type="text" id="ghBranch" placeholder="main">
+  </div>
+  <div class="row col">
+    <label>토큰 (fine-grained PAT, Contents: read/write)</label>
+    <input type="password" id="ghToken" placeholder="github_pat_... (이 칸에만 저장, 코드/저장소엔 안 올라감)" autocomplete="off">
+  </div>
+  <button class="secondary" id="saveGithub" style="margin-top:4px">GitHub 설정 저장</button>
+  <div class="note">토큰은 이 브라우저(chrome.storage.local)에만 저장됩니다. 저장소 코드에는 포함되지 않습니다.</div>
+</div>
+
+<div class="section">
+  <div class="label" style="display:flex;justify-content:space-between;align-items:center">
+    <span>📋 진단 로그</span>
+    <span>
+      <button class="secondary" id="refreshLogs">새로고침</button>
+      <button class="secondary" id="clearLogs">지우기</button>
+    </span>
+  </div>
+  <div class="logs" id="logsView"><div class="empty" style="color:#888">로그 없음</div></div>
+</div>
+
+<div class="note">
+대상: 양지파인, 한림용인, 포웰안성, 파인스톤<br>
+※ 로그인 상태에서만 동작
+</div>
+
+<script src="popup.js"></script>
+</

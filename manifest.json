@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "실시간 가격 모니터",
+  "version": "1.0.2",
+  "description": "오너골프 실시간부킹 가격 변동을 자동 감시하고 알림 (양지파인/한림용인/포웰안성/파인스톤)",
+  "permissions": ["scripting", "tabs", "storage", "alarms", "notifications"],
+  "host_permissions": [
+    "https://www.ownergolf.com/*",
+    "https://api.github.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "실시간 가격 모니터"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
