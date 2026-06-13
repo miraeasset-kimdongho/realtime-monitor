@@ -18,7 +18,9 @@ const DEFAULTS = {
     repo: 'miraeasset-kimdongho/realtime-monitor', // owner/name
     branch: 'main',
     token: '',         // fine-grained PAT (Contents: read/write). 절대 코드/저장소에 커밋하지 말 것
-    pushEnabled: true
+    pushEnabled: true,        // 변동 로그(logs/changes/) 커밋
+    systemLogPush: true,      // 시스템 진단 로그(logs/system/) 커밋
+    sysPushIntervalMin: 60    // 시스템 로그 최소 푸시 간격(분). 변동/오류 발생 시엔 이와 무관하게 즉시 푸시
   }
 };
 
@@ -257,6 +259,8 @@ async function runCheck(triggerType) {
 
   const elapsed = Date.now() - t0;
   await logEvent('INFO', 'runCheck_done', { trigger: triggerType, changes: changes.length, totalSlots, elapsedMs: elapsed });
+  // 시스템(진단) 로그 분리 푸시 (조건 충족 시)
+  await maybePushSystemLogs(cfg, { changed: changes.length > 0 });
   return { changes: changes.length, totalSlots, trigger: triggerType };
 }
 
@@ -317,8 +321,8 @@ function parsePrice(s) {
   return m ? parseInt(m[1].replace(/,/g, '')) : 0;
 }
 
-// ===================== #2: GitHub Contents API 로 로그 커밋 =====================
-// 변동 감지 시점에 logs/YYYY-MM-DD.jsonl 파일에 append 하여 커밋한다.
+// ===================== GitHub Contents API 로 로그 커밋 =====================
+// 변동 로그(logs/changes/)와 시스템 진단 로그(logs/system/)를 폴더 분리해 append-커밋한다.
 function ghHeaders(token) {
   return {
     'Authorization': `Bearer ${token}`,
@@ -329,25 +333,17 @@ function ghHeaders(token) {
 }
 
 // UTF-8 안전 base64 (한글 깨짐 방지)
-function utf8ToB64(str) {
-  return btoa(unescape(encodeURIComponent(str)));
-}
-function b64ToUtf8(b64) {
-  return decodeURIComponent(escape(atob(b64.replace(/\n/g, ''))));
+function utf8ToB64(str) { return btoa(unescape(encodeURIComponent(str))); }
+function b64ToUtf8(b64) { return decodeURIComponent(escape(atob(b64.replace(/\n/g, '')))); }
+
+function ghReady(gh) {
+  return !!(gh && gh.pushEnabled && gh.token && gh.repo);
 }
 
-async function pushChangesToGitHub(changes, cfg, triggerType) {
-  const gh = cfg.github || {};
-  if (!gh.pushEnabled) { await logEvent('INFO', 'gh_push_disabled', null); return; }
-  if (!gh.token || !gh.repo) {
-    await logEvent('WARN', 'gh_push_skip', { reason: '토큰 또는 저장소 미설정. 팝업 설정에서 입력하세요.', tokenSet: !!gh.token, repo: gh.repo });
-    return;
-  }
-
-  const dateStr = new Date().toISOString().substring(0, 10);
-  const path = `logs/${dateStr}.jsonl`;
+// 공통 헬퍼: 지정 경로 파일에 줄(jsonl)을 append 하여 1커밋. 성공 시 true.
+async function appendLinesToGitHub(gh, path, linesText, commitMessage, _retry = 0) {
   const branch = gh.branch || 'main';
-  const apiUrl = `https://api.github.com/repos/${gh.repo}/contents/${encodeURIComponent(path).replace(/%2F/g, '/')}`;
+  const apiUrl = `https://api.github.com/repos/${gh.repo}/contents/${path.split('/').map(encodeURIComponent).join('/')}`;
 
   // 1) 기존 파일 sha / 내용 조회 (append 위함)
   let sha = undefined;
@@ -360,52 +356,86 @@ async function pushChangesToGitHub(changes, cfg, triggerType) {
       if (j.content) prevContent = b64ToUtf8(j.content);
     } else if (r.status === 404) {
       // 신규 파일 — 정상
-      await logEvent('INFO', 'gh_new_logfile', { path });
     } else if (r.status === 401 || r.status === 403) {
-      await logEvent('ERROR', 'gh_auth_fail', { status: r.status, hint: '토큰 권한(Contents read/write) 또는 만료 확인' });
-      return;
+      await logEvent('ERROR', 'gh_auth_fail', { path, status: r.status, hint: '토큰 권한(Contents read/write) 또는 만료 확인' });
+      return false;
     } else {
-      await logEvent('ERROR', 'gh_get_fail', { status: r.status });
-      return;
+      await logEvent('ERROR', 'gh_get_fail', { path, status: r.status });
+      return false;
     }
   } catch (e) {
-    await logEvent('ERROR', 'gh_get_exc', e?.message);
-    return;
+    await logEvent('ERROR', 'gh_get_exc', { path, error: e?.message });
+    return false;
   }
 
-  // 2) 변동분 append
-  const now = Date.now();
-  const lines = changes.map(c => JSON.stringify({
-    ts: now, trigger: triggerType, kind: c.kind || 'price',
-    club: c.club, date: c.date, course: c.course, time: c.time,
-    oldPrice: c.oldPrice, newPrice: c.newPrice, direction: c.direction
-  })).join('\n') + '\n';
-  const newContent = prevContent + lines;
-
-  const body = {
-    message: `log: ${dateStr} ${changes.length}건 변동 (${triggerType}) @ ${new Date(now).toISOString()}`,
-    content: utf8ToB64(newContent),
-    branch
-  };
+  // 2) append 후 PUT 커밋
+  const body = { message: commitMessage, content: utf8ToB64(prevContent + linesText), branch };
   if (sha) body.sha = sha;
-
-  // 3) PUT 커밋
   try {
     const r = await fetch(apiUrl, { method: 'PUT', headers: ghHeaders(gh.token), body: JSON.stringify(body) });
     if (r.ok) {
       const j = await r.json();
-      await logEvent('INFO', 'gh_push_ok', { path, count: changes.length, commit: j.commit?.sha?.substring(0, 7) });
-    } else {
-      const text = await r.text().catch(() => '');
-      // 409 = sha 충돌(동시 커밋). 한 번 재시도.
-      if (r.status === 409) {
-        await logEvent('WARN', 'gh_conflict_retry', { path });
-        return pushChangesToGitHub(changes, cfg, triggerType);
-      }
-      await logEvent('ERROR', 'gh_push_fail', { status: r.status, body: text.slice(0, 300) });
+      await logEvent('INFO', 'gh_push_ok', { path, commit: j.commit?.sha?.substring(0, 7) });
+      return true;
     }
+    const text = await r.text().catch(() => '');
+    if (r.status === 409 && _retry < 2) {
+      // sha 충돌(동시 커밋) → 재조회 후 재시도
+      await logEvent('WARN', 'gh_conflict_retry', { path, retry: _retry + 1 });
+      return appendLinesToGitHub(gh, path, linesText, commitMessage, _retry + 1);
+    }
+    await logEvent('ERROR', 'gh_push_fail', { path, status: r.status, body: text.slice(0, 300) });
+    return false;
   } catch (e) {
-    await logEvent('ERROR', 'gh_push_exc', e?.message);
+    await logEvent('ERROR', 'gh_push_exc', { path, error: e?.message });
+    return false;
+  }
+}
+
+// (a) 변동(가격/신규) 로그 — 감지 즉시 logs/changes/ 에 커밋
+async function pushChangesToGitHub(changes, cfg, triggerType) {
+  const gh = cfg.github || {};
+  if (!gh.pushEnabled) { await logEvent('INFO', 'gh_push_disabled', null); return; }
+  if (!gh.token || !gh.repo) {
+    await logEvent('WARN', 'gh_push_skip', { reason: '토큰 또는 저장소 미설정. 팝업 설정에서 입력하세요.', tokenSet: !!gh.token, repo: gh.repo });
+    return;
+  }
+  const dateStr = new Date().toISOString().substring(0, 10);
+  const now = Date.now();
+  const linesText = changes.map(c => JSON.stringify({
+    ts: now, trigger: triggerType, kind: c.kind || 'price',
+    club: c.club, date: c.date, course: c.course, time: c.time,
+    oldPrice: c.oldPrice, newPrice: c.newPrice, direction: c.direction
+  })).join('\n') + '\n';
+  await appendLinesToGitHub(gh, `logs/changes/${dateStr}.jsonl`,
+    linesText, `changes: ${dateStr} ${changes.length}건 (${triggerType})`);
+}
+
+// (b) 시스템(진단) 로그 — 변동 로그와 분리해 logs/system/ 에 커밋
+// 과도한 커밋 방지: '변동 발생' 또는 'WARN/ERROR 존재' 또는 '마지막 푸시 후 sysPushIntervalMin 경과' 중
+// 하나라도 참일 때만, 아직 안 올린 항목을 모아 1커밋으로 올린다.
+async function maybePushSystemLogs(cfg, opts) {
+  const gh = cfg.github || {};
+  if (!ghReady(gh) || gh.systemLogPush === false) return;
+
+  const d = await chrome.storage.local.get([LOG_KEY, 'sysLogPushedTs', 'sysLogPushedAt']);
+  const all = d[LOG_KEY] || [];
+  const marker = d.sysLogPushedTs || 0;
+  const unpushed = all.filter(l => l.ts > marker);
+  if (unpushed.length === 0) return;
+
+  const hasProblem = unpushed.some(l => l.level === 'WARN' || l.level === 'ERROR');
+  const intervalMs = (gh.sysPushIntervalMin || 60) * 60000;
+  const dueByTime = (Date.now() - (d.sysLogPushedAt || 0)) >= intervalMs;
+  if (!(opts?.changed || hasProblem || dueByTime)) return;
+
+  const dateStr = new Date().toISOString().substring(0, 10);
+  const maxTs = unpushed[unpushed.length - 1].ts;
+  const linesText = unpushed.map(l => JSON.stringify(l)).join('\n') + '\n';
+  const ok = await appendLinesToGitHub(gh, `logs/system/${dateStr}.jsonl`,
+    linesText, `system: ${dateStr} ${unpushed.length}건 (problem=${hasProblem})`);
+  if (ok) {
+    await chrome.storage.local.set({ sysLogPushedTs: maxTs, sysLogPushedAt: Date.now() });
   }
 }
 

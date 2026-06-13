@@ -8,6 +8,7 @@ const intervalEl = document.getElementById('intervalMin');
 const daysEl = document.getElementById('daysAhead');
 // GitHub 설정
 const ghEnabledEl = document.getElementById('ghEnabled');
+const ghSysLogEl = document.getElementById('ghSysLog');
 const ghRepoEl = document.getElementById('ghRepo');
 const ghBranchEl = document.getElementById('ghBranch');
 const ghTokenEl = document.getElementById('ghToken');
@@ -72,6 +73,7 @@ async function loadConfig() {
   daysEl.value = cfg.daysAhead;
   const gh = cfg.github || {};
   ghEnabledEl.checked = gh.pushEnabled !== false;
+  ghSysLogEl.checked = gh.systemLogPush !== false;
   ghRepoEl.value = gh.repo || '';
   ghBranchEl.value = gh.branch || 'main';
   // 토큰은 저장돼 있으면 마스킹 표시 (placeholder 유지). 빈 칸이면 미설정.
@@ -111,6 +113,7 @@ document.getElementById('saveGithub').addEventListener('click', async () => {
   if (!currentCfg) currentCfg = await send({type:'getConfig'});
   const gh = Object.assign({}, currentCfg.github || {});
   gh.pushEnabled = ghEnabledEl.checked;
+  gh.systemLogPush = ghSysLogEl.checked;
   gh.repo = ghRepoEl.value.trim();
   gh.branch = ghBranchEl.value.trim() || 'main';
   // 토큰: 마스킹 그대로면 기존 값 유지, 새로 입력했으면 교체
