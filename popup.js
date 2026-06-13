@@ -44,12 +44,14 @@ async function loadStatus() {
 
 async function loadAlerts() {
   const alerts = await send({type:'getAlerts'});
-  alertCountEl.textContent = `(${alerts.length})`;
-  if (!alerts.length) {
+  const todayStr = new Date().toISOString().substring(0, 10);
+  const visible = alerts.filter(a => !a.date || a.date >= todayStr);
+  alertCountEl.textContent = `(${visible.length})`;
+  if (!visible.length) {
     alertsListEl.innerHTML = '<div class="empty">변동 없음</div>';
     return;
   }
-  alertsListEl.innerHTML = alerts.slice(0, 30).map(a => {
+  alertsListEl.innerHTML = visible.slice(0, 30).map(a => {
     const isNew = a.kind === 'new' || a.direction === 'new';
     const direction = a.direction === 'down' ? 'down' : '';
     const diffClass = a.direction === 'down' ? 'diff-down' : 'diff-up';
