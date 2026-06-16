@@ -1982,3 +1982,55 @@
 {"detail":{"newCnt":10,"priceCnt":1,"total":11},"event":"notify_sent","level":"INFO","ts":1781607965982}
 {"detail":{"commit":"798ec6f","path":"logs/changes/2026-06-16.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1781607968851}
 {"detail":{"changes":11,"elapsedMs":225595,"totalSlots":184,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1781607968911}
+{"detail":{"commit":"f28bd0b","path":"logs/system/2026-06-16.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1781607971981}
+{"detail":{"changes":4,"hadOldData":true,"totalSlots":188},"event":"detect_done","level":"INFO","ts":1781607981916}
+{"detail":{"newCnt":4,"priceCnt":0,"total":4},"event":"notify_sent","level":"INFO","ts":1781607981936}
+{"detail":{"path":"logs/changes/2026-06-16.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1781607982933}
+{"detail":{"path":"logs/changes/2026-06-16.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1781607983881}
+{"detail":{"body":"{\n  \"message\": \"logs/changes/2026-06-16.jsonl does not match b38740e61297f91a6d29db6f6f1ca328867cf4f2\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/changes/2026-06-16.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1781607984862}
+{"detail":{"changes":4,"elapsedMs":226353,"totalSlots":188,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1781607984875}
+{"detail":{"path":"logs/system/2026-06-16.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1781607986045}
+{"detail":{"path":"logs/system/2026-06-16.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1781607987179}
+{"detail":{"body":"{\n  \"message\": \"logs/system/2026-06-16.jsonl does not match 7cbd0c3fc648b3746c87922da5d0691d6fa7acc8\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/system/2026-06-16.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1781607987941}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-06-16","2026-06-17","2026-06-18","2026-06-19"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1781608058578}
+{"detail":{"error":"Tabs cannot be edited right now (user may be dragging a tab).","tabId":1059155285},"event":"tab_remove_fail","level":"WARN","ts":1781608079947}
+{"detail":{"club":"양지파인","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080032}
+{"detail":{"club":"양지파인","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080145}
+{"detail":{"club":"한림용인","date":"2026-06-16","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080201}
+{"detail":{"club":"한림용인","date":"2026-06-16","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080223}
+{"detail":{"club":"한림용인","date":"2026-06-17","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080245}
+{"detail":{"club":"한림용인","date":"2026-06-17","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080263}
+{"detail":{"club":"한림용인","date":"2026-06-18","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080280}
+{"detail":{"club":"한림용인","date":"2026-06-18","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080360}
+{"detail":{"club":"한림용인","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080422}
+{"detail":{"club":"한림용인","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080498}
+{"detail":{"club":"포웰안성","date":"2026-06-16","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080553}
+{"detail":{"club":"포웰안성","date":"2026-06-16","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080564}
+{"detail":{"club":"포웰안성","date":"2026-06-17","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080580}
+{"detail":{"club":"포웰안성","date":"2026-06-17","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080596}
+{"detail":{"club":"포웰안성","date":"2026-06-18","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080612}
+{"detail":{"club":"포웰안성","date":"2026-06-18","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080627}
+{"detail":{"club":"포웰안성","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080696}
+{"detail":{"club":"포웰안성","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080724}
+{"detail":{"club":"파인스톤","date":"2026-06-16","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080738}
+{"detail":{"club":"파인스톤","date":"2026-06-16","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080752}
+{"detail":{"club":"파인스톤","date":"2026-06-17","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080764}
+{"detail":{"club":"파인스톤","date":"2026-06-17","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080776}
+{"detail":{"club":"파인스톤","date":"2026-06-18","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080794}
+{"detail":{"club":"파인스톤","date":"2026-06-18","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080811}
+{"detail":{"club":"파인스톤","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080829}
+{"detail":{"club":"파인스톤","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080843}
+{"detail":{"club":"클럽72","date":"2026-06-16","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080854}
+{"detail":{"club":"클럽72","date":"2026-06-16","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080880}
+{"detail":{"club":"클럽72","date":"2026-06-17","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781608080896}
+{"detail":{"club":"클럽72","date":"2026-06-17","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781608080913}
+{"detail":{"club":"더크로스비","date":"2026-06-16","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1781608101906}
+{"detail":{"club":"더크로스비","date":"2026-06-16"},"event":"empty_slots","level":"WARN","ts":1781608101949}
+{"detail":{"club":"더크로스비","date":"2026-06-17","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1781608108912}
+{"detail":{"club":"더크로스비","date":"2026-06-17"},"event":"empty_slots","level":"WARN","ts":1781608108930}
+{"detail":{"club":"여주신라","date":"2026-06-16","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1781608129903}
+{"detail":{"club":"여주신라","date":"2026-06-16"},"event":"empty_slots","level":"WARN","ts":1781608129929}
+{"detail":{"changes":1,"hadOldData":true,"totalSlots":74},"event":"detect_done","level":"INFO","ts":1781608178918}
+{"detail":{"newCnt":1,"priceCnt":0,"total":1},"event":"notify_sent","level":"INFO","ts":1781608178947}
+{"detail":{"commit":"ade8d05","path":"logs/changes/2026-06-16.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1781608181912}
+{"detail":{"changes":1,"elapsedMs":123346,"totalSlots":74,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1781608181923}
