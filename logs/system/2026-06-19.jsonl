@@ -2374,3 +2374,26 @@
 {"detail":{"club":"여주신라","date":"2026-06-19"},"event":"empty_slots","level":"WARN","ts":1781873753225}
 {"detail":{"changes":0,"hadOldData":true,"totalSlots":277},"event":"detect_done","level":"INFO","ts":1781873802223}
 {"detail":{"changes":0,"elapsedMs":223686,"totalSlots":277,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1781873802236}
+{"detail":{"commit":"4334a86","path":"logs/system/2026-06-19.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1781873805221}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-06-19","2026-06-20","2026-06-21","2026-06-22"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1781873878555}
+{"detail":{"club":"한림용인","date":"2026-06-19","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1781873913213}
+{"detail":{"club":"한림용인","date":"2026-06-19"},"event":"empty_slots","level":"WARN","ts":1781873913226}
+{"detail":{"club":"포웰안성","date":"2026-06-19","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1781873941210}
+{"detail":{"club":"포웰안성","date":"2026-06-19"},"event":"empty_slots","level":"WARN","ts":1781873941223}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-06-19","2026-06-20","2026-06-21","2026-06-22"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1781898554316}
+{"detail":{"error":"Tabs cannot be edited right now (user may be dragging a tab).","tabId":1059242522},"event":"tab_remove_fail","level":"WARN","ts":1781898561164}
+{"detail":{"club":"양지파인","date":"2026-06-20","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781898561179}
+{"detail":{"club":"양지파인","date":"2026-06-20","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781898561203}
+{"detail":{"club":"양지파인","date":"2026-06-21","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781898561214}
+{"detail":{"club":"양지파인","date":"2026-06-21","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781898561224}
+{"detail":{"club":"양지파인","date":"2026-06-22","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781898561234}
+{"detail":{"club":"양지파인","date":"2026-06-22","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781898561245}
+{"detail":{"club":"한림용인","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1781898561255}
+{"detail":{"club":"한림용인","date":"2026-06-19","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1781898561266}
+{"detail":{"club":"한림용인","date":"2026-06-22","error":"Frame with ID 0 was removed."},"event":"inject_fail","level":"ERROR","ts":1781898578332}
+{"detail":{"error":"No tab with id: 1059242536.","tabId":1059242536},"event":"tab_remove_fail","level":"WARN","ts":1781898578351}
+{"detail":{"club":"한림용인","date":"2026-06-22"},"event":"empty_slots","level":"WARN","ts":1781898578363}
+{"detail":{"changes":53,"hadOldData":true,"totalSlots":221},"event":"detect_done","level":"INFO","ts":1781898745671}
+{"detail":{"newCnt":46,"priceCnt":7,"total":53},"event":"notify_sent","level":"INFO","ts":1781898745689}
+{"detail":{"commit":"3aa8a11","path":"logs/changes/2026-06-19.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1781898747283}
+{"detail":{"changes":53,"elapsedMs":193006,"totalSlots":221,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1781898747293}
