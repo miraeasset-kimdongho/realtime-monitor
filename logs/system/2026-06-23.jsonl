@@ -704,3 +704,18 @@
 {"detail":{"newCnt":4,"priceCnt":2,"total":6},"event":"notify_sent","level":"INFO","ts":1782193921167}
 {"detail":{"commit":"b3e545e","path":"logs/changes/2026-06-23.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782193923017}
 {"detail":{"changes":6,"elapsedMs":225899,"totalSlots":433,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782193923039}
+{"detail":{"commit":"7dd508c","path":"logs/system/2026-06-23.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782193925137}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-06-23","2026-06-24","2026-06-25","2026-06-26"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1782193997145}
+{"detail":{"club":"파인스톤","date":"2026-06-24"},"event":"empty_slots","level":"WARN","ts":1782194092423}
+{"detail":{"club":"더크로스비","date":"2026-06-23","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1782194141123}
+{"detail":{"club":"더크로스비","date":"2026-06-23"},"event":"empty_slots","level":"WARN","ts":1782194141136}
+{"detail":{"club":"더크로스비","date":"2026-06-24","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1782194148116}
+{"detail":{"club":"더크로스비","date":"2026-06-24"},"event":"empty_slots","level":"WARN","ts":1782194148131}
+{"detail":{"club":"더크로스비","date":"2026-06-26","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1782194162111}
+{"detail":{"club":"더크로스비","date":"2026-06-26"},"event":"empty_slots","level":"WARN","ts":1782194162124}
+{"detail":{"club":"여주신라","date":"2026-06-23","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1782194169115}
+{"detail":{"club":"여주신라","date":"2026-06-23"},"event":"empty_slots","level":"WARN","ts":1782194169130}
+{"detail":{"changes":17,"hadOldData":true,"totalSlots":425},"event":"detect_done","level":"INFO","ts":1782194218134}
+{"detail":{"newCnt":9,"priceCnt":8,"total":17},"event":"notify_sent","level":"INFO","ts":1782194218161}
+{"detail":{"commit":"a740b29","path":"logs/changes/2026-06-23.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782194219819}
+{"detail":{"changes":17,"elapsedMs":222684,"totalSlots":425,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782194219829}
