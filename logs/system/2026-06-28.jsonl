@@ -1657,3 +1657,69 @@
 {"detail":{"club":"여주신라","date":"2026-06-28"},"event":"empty_slots","level":"WARN","ts":1782656410279}
 {"detail":{"changes":0,"hadOldData":true,"totalSlots":577},"event":"detect_done","level":"INFO","ts":1782656459286}
 {"detail":{"changes":0,"elapsedMs":224180,"totalSlots":577,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782656459302}
+{"detail":{"commit":"a5a06f7","path":"logs/system/2026-06-28.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782656461221}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-06-28","2026-06-29","2026-06-30","2026-07-01"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1782656535116}
+{"detail":{"club":"한림용인","date":"2026-06-28","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1782656570264}
+{"detail":{"club":"한림용인","date":"2026-06-28"},"event":"empty_slots","level":"WARN","ts":1782656570279}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-06-28","2026-06-29","2026-06-30","2026-07-01"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1782674663951}
+{"detail":{"error":"Tabs cannot be edited right now (user may be dragging a tab).","tabId":1059408673},"event":"tab_remove_fail","level":"WARN","ts":1782674691271}
+{"detail":{"club":"한림용인","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691282}
+{"detail":{"club":"한림용인","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691293}
+{"detail":{"club":"한림용인","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691304}
+{"detail":{"club":"한림용인","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691314}
+{"detail":{"club":"한림용인","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691323}
+{"detail":{"club":"한림용인","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691334}
+{"detail":{"club":"한림용인","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691344}
+{"detail":{"club":"한림용인","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691354}
+{"detail":{"club":"포웰안성","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691364}
+{"detail":{"club":"포웰안성","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691374}
+{"detail":{"club":"포웰안성","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691385}
+{"detail":{"club":"포웰안성","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691395}
+{"detail":{"club":"포웰안성","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691405}
+{"detail":{"club":"포웰안성","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691414}
+{"detail":{"club":"포웰안성","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691424}
+{"detail":{"club":"포웰안성","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691437}
+{"detail":{"club":"파인스톤","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691448}
+{"detail":{"club":"파인스톤","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691457}
+{"detail":{"club":"파인스톤","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691469}
+{"detail":{"club":"파인스톤","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691480}
+{"detail":{"club":"파인스톤","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691489}
+{"detail":{"club":"파인스톤","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691500}
+{"detail":{"club":"파인스톤","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691511}
+{"detail":{"club":"파인스톤","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691521}
+{"detail":{"club":"클럽72","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691532}
+{"detail":{"club":"클럽72","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691542}
+{"detail":{"club":"클럽72","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691552}
+{"detail":{"club":"클럽72","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691562}
+{"detail":{"club":"클럽72","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691572}
+{"detail":{"club":"클럽72","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691583}
+{"detail":{"club":"클럽72","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691594}
+{"detail":{"club":"클럽72","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691603}
+{"detail":{"club":"더크로스비","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691614}
+{"detail":{"club":"더크로스비","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691623}
+{"detail":{"club":"더크로스비","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691634}
+{"detail":{"club":"더크로스비","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691643}
+{"detail":{"club":"더크로스비","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691653}
+{"detail":{"club":"더크로스비","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691664}
+{"detail":{"club":"더크로스비","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691677}
+{"detail":{"club":"더크로스비","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691687}
+{"detail":{"club":"여주신라","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691697}
+{"detail":{"club":"여주신라","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691706}
+{"detail":{"club":"여주신라","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691716}
+{"detail":{"club":"여주신라","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691726}
+{"detail":{"club":"여주신라","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691738}
+{"detail":{"club":"여주신라","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691749}
+{"detail":{"club":"여주신라","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691760}
+{"detail":{"club":"여주신라","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691771}
+{"detail":{"club":"360도","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691782}
+{"detail":{"club":"360도","date":"2026-06-28","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691793}
+{"detail":{"club":"360도","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691804}
+{"detail":{"club":"360도","date":"2026-06-29","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691815}
+{"detail":{"club":"360도","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691826}
+{"detail":{"club":"360도","date":"2026-06-30","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691837}
+{"detail":{"club":"360도","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1782674691848}
+{"detail":{"club":"360도","date":"2026-07-01","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1782674691857}
+{"detail":{"changes":22,"hadOldData":true,"totalSlots":54},"event":"detect_done","level":"INFO","ts":1782674691871}
+{"detail":{"newCnt":8,"priceCnt":14,"total":22},"event":"notify_sent","level":"INFO","ts":1782674691886}
+{"detail":{"commit":"be5e66a","path":"logs/changes/2026-06-28.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782674693396}
+{"detail":{"changes":22,"elapsedMs":29469,"totalSlots":54,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782674693408}
