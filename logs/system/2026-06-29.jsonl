@@ -1572,3 +1572,8 @@
 {"detail":{"newCnt":115,"priceCnt":0,"total":115},"event":"notify_sent","level":"INFO","ts":1782761419207}
 {"detail":{"commit":"2a71f4d","path":"logs/changes/2026-06-29.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782761421021}
 {"detail":{"changes":115,"elapsedMs":20194737,"totalSlots":388,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782761421035}
+{"detail":{"commit":"8d1dfc8","path":"logs/system/2026-06-29.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782761422834}
+{"detail":{"changes":383,"hadOldData":true,"totalSlots":744},"event":"detect_done","level":"INFO","ts":1782761519192}
+{"detail":{"newCnt":383,"priceCnt":0,"total":383},"event":"notify_sent","level":"INFO","ts":1782761519221}
+{"detail":{"commit":"eb222da","path":"logs/changes/2026-06-29.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782761521051}
+{"detail":{"changes":383,"elapsedMs":225566,"totalSlots":744,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782761521060}
