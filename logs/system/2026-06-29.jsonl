@@ -1577,3 +1577,16 @@
 {"detail":{"newCnt":383,"priceCnt":0,"total":383},"event":"notify_sent","level":"INFO","ts":1782761519221}
 {"detail":{"commit":"eb222da","path":"logs/changes/2026-06-29.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782761521051}
 {"detail":{"changes":383,"elapsedMs":225566,"totalSlots":744,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782761521060}
+{"detail":{"commit":"995bce2","path":"logs/system/2026-06-29.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782761523091}
+{"detail":{"changes":7,"hadOldData":true,"totalSlots":751},"event":"detect_done","level":"INFO","ts":1782761550180}
+{"detail":{"newCnt":7,"priceCnt":0,"total":7},"event":"notify_sent","level":"INFO","ts":1782761550221}
+{"detail":{"path":"logs/changes/2026-06-29.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1782761551586}
+{"detail":{"path":"logs/changes/2026-06-29.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1782761552568}
+{"detail":{"body":"{\n  \"message\": \"logs/changes/2026-06-29.jsonl does not match b2cf70110ab3fd4814af0f0a90e48f6afba4c428\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/changes/2026-06-29.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1782761553322}
+{"detail":{"changes":7,"elapsedMs":226843,"totalSlots":751,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782761553334}
+{"detail":{"path":"logs/system/2026-06-29.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1782761553904}
+{"detail":{"path":"logs/system/2026-06-29.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1782761554468}
+{"detail":{"body":"{\n  \"message\": \"logs/system/2026-06-29.jsonl does not match 88730cd9123d30de394be5032807ee2d5f4436a8\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/system/2026-06-29.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1782761555603}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-06-29","2026-06-30","2026-07-01","2026-07-02"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1782761626304}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":751},"event":"detect_done","level":"INFO","ts":1782761850189}
+{"detail":{"changes":0,"elapsedMs":223907,"totalSlots":751,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782761850210}
