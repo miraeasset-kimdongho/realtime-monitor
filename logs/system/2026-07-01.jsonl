@@ -719,3 +719,13 @@
 {"detail":{"newCnt":0,"priceCnt":8,"total":8},"event":"notify_sent","level":"INFO","ts":1782883816586}
 {"detail":{"commit":"fa3c2c8","path":"logs/changes/2026-07-01.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782883818273}
 {"detail":{"changes":8,"elapsedMs":225569,"totalSlots":462,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782883818356}
+{"detail":{"commit":"3fec13b","path":"logs/system/2026-07-01.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1782883820592}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-01","2026-07-02","2026-07-03","2026-07-04"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1782883892788}
+{"detail":{"club":"더크로스비","date":"2026-07-01","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1782884039539}
+{"detail":{"club":"더크로스비","date":"2026-07-01"},"event":"empty_slots","level":"WARN","ts":1782884039557}
+{"detail":{"club":"더크로스비","date":"2026-07-02","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1782884046545}
+{"detail":{"club":"더크로스비","date":"2026-07-02"},"event":"empty_slots","level":"WARN","ts":1782884046570}
+{"detail":{"club":"여주신라","date":"2026-07-01","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1782884067537}
+{"detail":{"club":"여주신라","date":"2026-07-01"},"event":"empty_slots","level":"WARN","ts":1782884067555}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":460},"event":"detect_done","level":"INFO","ts":1782884116559}
+{"detail":{"changes":0,"elapsedMs":223816,"totalSlots":460,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1782884116603}
