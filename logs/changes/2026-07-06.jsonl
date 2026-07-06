@@ -1787,3 +1787,6 @@
 {"ts":1783375142649,"trigger":"자동","kind":"new","club":"여주신라","date":"2026-07-07","course":"South","time":"14:24","oldPrice":null,"newPrice":"90,000원","direction":"new"}
 {"ts":1783376042637,"trigger":"자동","kind":"new","club":"클럽72","date":"2026-07-07","course":"클래식OUT","time":"08:34","oldPrice":null,"newPrice":"90,000원","direction":"new"}
 {"ts":1783376042637,"trigger":"자동","kind":"new","club":"클럽72","date":"2026-07-07","course":"레이크OUT","time":"08:34","oldPrice":null,"newPrice":"90,000원","direction":"new"}
+{"ts":1783376642638,"trigger":"자동","kind":"new","club":"클럽72","date":"2026-07-07","course":"레이크IN","time":"08:27","oldPrice":null,"newPrice":"80,000원","direction":"new"}
+{"ts":1783376642638,"trigger":"자동","kind":"price","club":"클럽72","date":"2026-07-07","course":"클래식OUT","time":"08:34","oldPrice":"90,000원","newPrice":"80,000원","direction":"down"}
+{"ts":1783376642638,"trigger":"자동","kind":"new","club":"클럽72","date":"2026-07-07","course":"클래식IN","time":"08:34","oldPrice":null,"newPrice":"80,000원","direction":"new"}
