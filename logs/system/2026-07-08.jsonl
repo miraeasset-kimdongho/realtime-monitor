@@ -2343,3 +2343,28 @@
 {"detail":{"newCnt":77,"priceCnt":0,"total":77},"event":"notify_sent","level":"INFO","ts":1783537492811}
 {"detail":{"commit":"3b25899","path":"logs/changes/2026-07-08.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1783537495090}
 {"detail":{"changes":77,"elapsedMs":25184901,"totalSlots":493,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1783537495104}
+{"detail":{"commit":"8f66c80","path":"logs/system/2026-07-08.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1783537497482}
+{"detail":{"changes":2,"hadOldData":true,"totalSlots":463},"event":"detect_done","level":"INFO","ts":1783537499681}
+{"detail":{"newCnt":2,"priceCnt":0,"total":2},"event":"notify_sent","level":"INFO","ts":1783537499724}
+{"detail":{"path":"logs/changes/2026-07-08.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1783537500907}
+{"detail":{"path":"logs/changes/2026-07-08.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1783537502045}
+{"detail":{"body":"{\n  \"message\": \"logs/changes/2026-07-08.jsonl does not match e8f8c77c8df624748c86bb385133da67a6c2f94b\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/changes/2026-07-08.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1783537503153}
+{"detail":{"changes":2,"elapsedMs":225812,"totalSlots":463,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1783537503163}
+{"detail":{"path":"logs/system/2026-07-08.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1783537504494}
+{"detail":{"path":"logs/system/2026-07-08.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1783537505905}
+{"detail":{"body":"{\n  \"message\": \"logs/system/2026-07-08.jsonl does not match d08e043f9192c411d9157f0b6762056be61d82f0\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/system/2026-07-08.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1783537507260}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-08","2026-07-09","2026-07-10","2026-07-11"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1783537510122}
+{"detail":{"club":"포웰안성","date":"2026-07-08","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1783537575033}
+{"detail":{"club":"포웰안성","date":"2026-07-08"},"event":"empty_slots","level":"WARN","ts":1783537575049}
+{"detail":{"club":"포웰안성","date":"2026-07-10","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1783537589043}
+{"detail":{"club":"포웰안성","date":"2026-07-10"},"event":"empty_slots","level":"WARN","ts":1783537589062}
+{"detail":{"club":"더크로스비","date":"2026-07-08","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1783537659045}
+{"detail":{"club":"더크로스비","date":"2026-07-08"},"event":"empty_slots","level":"WARN","ts":1783537659065}
+{"detail":{"club":"더크로스비","date":"2026-07-09","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1783537666041}
+{"detail":{"club":"더크로스비","date":"2026-07-09"},"event":"empty_slots","level":"WARN","ts":1783537666063}
+{"detail":{"club":"더크로스비","date":"2026-07-10","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1783537673034}
+{"detail":{"club":"더크로스비","date":"2026-07-10"},"event":"empty_slots","level":"WARN","ts":1783537673051}
+{"detail":{"changes":2,"hadOldData":true,"totalSlots":465},"event":"detect_done","level":"INFO","ts":1783537736054}
+{"detail":{"newCnt":2,"priceCnt":0,"total":2},"event":"notify_sent","level":"INFO","ts":1783537736095}
+{"detail":{"commit":"3efa293","path":"logs/changes/2026-07-08.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1783537738704}
+{"detail":{"changes":2,"elapsedMs":228603,"totalSlots":465,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1783537738720}
