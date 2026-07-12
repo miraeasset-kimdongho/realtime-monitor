@@ -230,3 +230,17 @@
 {"detail":{"newCnt":4,"priceCnt":7,"total":11},"event":"notify_sent","level":"INFO","ts":1783819313381}
 {"detail":{"commit":"ec4c7d8","path":"logs/changes/2026-07-12.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1783819314754}
 {"detail":{"changes":11,"elapsedMs":225384,"totalSlots":704,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1783819314764}
+{"detail":{"commit":"d251045","path":"logs/system/2026-07-12.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1783819322422}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-12","2026-07-13","2026-07-14","2026-07-15"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1783819389394}
+{"detail":{"club":"포웰안성","date":"2026-07-12","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1783819452357}
+{"detail":{"club":"포웰안성","date":"2026-07-12"},"event":"empty_slots","level":"WARN","ts":1783819452377}
+{"detail":{"club":"더크로스비","date":"2026-07-12","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1783819536352}
+{"detail":{"club":"더크로스비","date":"2026-07-12"},"event":"empty_slots","level":"WARN","ts":1783819536365}
+{"detail":{"club":"더크로스비","date":"2026-07-13","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1783819543350}
+{"detail":{"club":"더크로스비","date":"2026-07-13"},"event":"empty_slots","level":"WARN","ts":1783819543364}
+{"detail":{"club":"여주신라","date":"2026-07-12","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1783819564353}
+{"detail":{"club":"여주신라","date":"2026-07-12"},"event":"empty_slots","level":"WARN","ts":1783819564367}
+{"detail":{"changes":22,"hadOldData":true,"totalSlots":704},"event":"detect_done","level":"INFO","ts":1783819613355}
+{"detail":{"newCnt":1,"priceCnt":21,"total":22},"event":"notify_sent","level":"INFO","ts":1783819613376}
+{"detail":{"commit":"4e9b533","path":"logs/changes/2026-07-12.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1783819614995}
+{"detail":{"changes":22,"elapsedMs":225613,"totalSlots":704,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1783819615006}
