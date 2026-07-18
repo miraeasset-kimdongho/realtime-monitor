@@ -502,3 +502,19 @@
 {"detail":{"club":"여주신라","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784355841665}
 {"detail":{"changes":0,"hadOldData":true,"totalSlots":916},"event":"detect_done","level":"INFO","ts":1784355890671}
 {"detail":{"changes":0,"elapsedMs":223429,"totalSlots":916,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784355890696}
+{"detail":{"commit":"98f0a92","path":"logs/system/2026-07-18.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784355892459}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-18","2026-07-19","2026-07-20","2026-07-21"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784355967276}
+{"detail":{"club":"한림용인","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784356001656}
+{"detail":{"club":"한림용인","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784356001689}
+{"detail":{"club":"파인스톤","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784356057659}
+{"detail":{"club":"파인스톤","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784356057675}
+{"detail":{"club":"클럽72","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784356085646}
+{"detail":{"club":"클럽72","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784356085664}
+{"detail":{"club":"여주신라","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784356141649}
+{"detail":{"club":"여주신라","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784356141665}
+{"detail":{"club":"360도","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784356169656}
+{"detail":{"club":"360도","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784356169678}
+{"detail":{"club":"360도","date":"2026-07-19","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784356176658}
+{"detail":{"club":"360도","date":"2026-07-19"},"event":"empty_slots","level":"WARN","ts":1784356176672}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":897},"event":"detect_done","level":"INFO","ts":1784356190735}
+{"detail":{"changes":0,"elapsedMs":223545,"totalSlots":897,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784356190820}
