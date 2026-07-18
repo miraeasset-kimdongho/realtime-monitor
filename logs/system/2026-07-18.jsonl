@@ -1578,3 +1578,30 @@
 {"detail":{"club":"여주신라","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784380742661}
 {"detail":{"changes":0,"hadOldData":true,"totalSlots":720},"event":"detect_done","level":"INFO","ts":1784380764658}
 {"detail":{"changes":0,"elapsedMs":220376,"totalSlots":720,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784380764675}
+{"detail":{"commit":"35f3d3f","path":"logs/system/2026-07-18.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784380766662}
+{"detail":{"changes":28,"hadOldData":true,"totalSlots":748},"event":"detect_done","level":"INFO","ts":1784380791654}
+{"detail":{"newCnt":28,"priceCnt":0,"total":28},"event":"notify_sent","level":"INFO","ts":1784380791677}
+{"detail":{"commit":"994ecce","path":"logs/changes/2026-07-18.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784380793389}
+{"detail":{"changes":28,"elapsedMs":226178,"totalSlots":748,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784380793399}
+{"detail":{"path":"logs/system/2026-07-18.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1784380794529}
+{"detail":{"path":"logs/system/2026-07-18.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1784380794920}
+{"detail":{"body":"{\n  \"message\": \"logs/system/2026-07-18.jsonl does not match 77eca52b785d211f07eea4de67532914d3084723\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/system/2026-07-18.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1784380795483}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-18","2026-07-19","2026-07-20","2026-07-21"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784380867271}
+{"detail":{"club":"한림용인","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784380902647}
+{"detail":{"club":"한림용인","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784380902673}
+{"detail":{"club":"포웰안성","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784380930638}
+{"detail":{"club":"포웰안성","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784380930684}
+{"detail":{"club":"포웰안성","date":"2026-07-19","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784380937638}
+{"detail":{"club":"포웰안성","date":"2026-07-19"},"event":"empty_slots","level":"WARN","ts":1784380937654}
+{"detail":{"club":"파인스톤","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784380958646}
+{"detail":{"club":"파인스톤","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784380958662}
+{"detail":{"club":"클럽72","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784380986642}
+{"detail":{"club":"클럽72","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784380986659}
+{"detail":{"club":"더크로스비","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784381014653}
+{"detail":{"club":"더크로스비","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784381014673}
+{"detail":{"club":"더크로스비","date":"2026-07-19","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784381021646}
+{"detail":{"club":"더크로스비","date":"2026-07-19"},"event":"empty_slots","level":"WARN","ts":1784381021689}
+{"detail":{"club":"여주신라","date":"2026-07-18","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784381042638}
+{"detail":{"club":"여주신라","date":"2026-07-18"},"event":"empty_slots","level":"WARN","ts":1784381042656}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":748},"event":"detect_done","level":"INFO","ts":1784381091657}
+{"detail":{"changes":0,"elapsedMs":224415,"totalSlots":748,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784381091685}
