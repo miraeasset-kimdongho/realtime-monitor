@@ -84,3 +84,19 @@
 {"detail":{"newCnt":109,"priceCnt":0,"total":109},"event":"notify_sent","level":"INFO","ts":1784508508044}
 {"detail":{"body":"{\"message\": \"No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists.\"}\r\n","path":"logs/changes/2026-07-20.jsonl","status":503},"event":"gh_push_fail","level":"ERROR","ts":1784508510598}
 {"detail":{"changes":109,"elapsedMs":226326,"totalSlots":1158,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784508510609}
+{"detail":{"commit":"afc9af8","path":"logs/system/2026-07-20.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784508519472}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-20","2026-07-21","2026-07-22","2026-07-23"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784508584285}
+{"detail":{"club":"여주신라","date":"2026-07-20","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784508758989}
+{"detail":{"club":"여주신라","date":"2026-07-20"},"event":"empty_slots","level":"WARN","ts":1784508759003}
+{"detail":{"changes":1,"hadOldData":true,"totalSlots":1157},"event":"detect_done","level":"INFO","ts":1784508808002}
+{"detail":{"newCnt":1,"priceCnt":0,"total":1},"event":"notify_sent","level":"INFO","ts":1784508808033}
+{"detail":{"body":"{\"message\": \"No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists.\"}\r\n","path":"logs/changes/2026-07-20.jsonl","status":503},"event":"gh_push_fail","level":"ERROR","ts":1784508810881}
+{"detail":{"changes":1,"elapsedMs":226609,"totalSlots":1157,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784508810893}
+{"detail":{"body":"{\"message\": \"No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists.\"}\r\n","path":"logs/system/2026-07-20.jsonl","status":503},"event":"gh_push_fail","level":"ERROR","ts":1784508813566}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-20","2026-07-21","2026-07-22","2026-07-23"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784508884281}
+{"detail":{"club":"여주신라","date":"2026-07-20","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784509060999}
+{"detail":{"club":"여주신라","date":"2026-07-20"},"event":"empty_slots","level":"WARN","ts":1784509061014}
+{"detail":{"changes":3,"hadOldData":true,"totalSlots":1155},"event":"detect_done","level":"INFO","ts":1784509110023}
+{"detail":{"newCnt":3,"priceCnt":0,"total":3},"event":"notify_sent","level":"INFO","ts":1784509110054}
+{"detail":{"body":"{\"message\": \"No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists.\"}\r\n","path":"logs/changes/2026-07-20.jsonl","status":503},"event":"gh_push_fail","level":"ERROR","ts":1784509112567}
+{"detail":{"changes":3,"elapsedMs":228299,"totalSlots":1155,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784509112579}
