@@ -217,3 +217,15 @@
 {"detail":{"newCnt":7,"priceCnt":16,"total":23},"event":"notify_sent","level":"INFO","ts":1784604987609}
 {"detail":{"commit":"eb94902","path":"logs/changes/2026-07-21.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784604990417}
 {"detail":{"changes":23,"elapsedMs":227081,"totalSlots":1145,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784604990430}
+{"detail":{"commit":"b649ba6","path":"logs/system/2026-07-21.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784604991628}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-21","2026-07-22","2026-07-23","2026-07-24"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784605063349}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":1142},"event":"detect_done","level":"INFO","ts":1784605287567}
+{"detail":{"changes":0,"elapsedMs":224237,"totalSlots":1142,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784605287586}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-21","2026-07-22","2026-07-23","2026-07-24"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784605363349}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":1135},"event":"detect_done","level":"INFO","ts":1784605589559}
+{"detail":{"changes":0,"elapsedMs":226230,"totalSlots":1135,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784605589579}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-21","2026-07-22","2026-07-23","2026-07-24"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784605663349}
+{"detail":{"changes":2,"hadOldData":true,"totalSlots":1135},"event":"detect_done","level":"INFO","ts":1784605887562}
+{"detail":{"newCnt":2,"priceCnt":0,"total":2},"event":"notify_sent","level":"INFO","ts":1784605887588}
+{"detail":{"commit":"28d937d","path":"logs/changes/2026-07-21.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784605889379}
+{"detail":{"changes":2,"elapsedMs":226043,"totalSlots":1135,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784605889391}
