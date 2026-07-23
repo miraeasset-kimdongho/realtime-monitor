@@ -1770,3 +1770,28 @@
 {"detail":{"club":"여주신라","date":"2026-07-23"},"event":"empty_slots","level":"WARN","ts":1784815273223}
 {"detail":{"changes":0,"hadOldData":true,"totalSlots":826},"event":"detect_done","level":"INFO","ts":1784815322246}
 {"detail":{"changes":0,"elapsedMs":224273,"totalSlots":826,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784815322261}
+{"detail":{"commit":"559549e","path":"logs/system/2026-07-23.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784815324631}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-23","2026-07-24","2026-07-25","2026-07-26"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784834474115}
+{"detail":{"error":"Tabs cannot be edited right now (user may be dragging a tab).","tabId":1060055920},"event":"tab_remove_fail","level":"WARN","ts":1784834530197}
+{"detail":{"club":"포웰안성","date":"2026-07-23","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1784834530209}
+{"detail":{"club":"포웰안성","date":"2026-07-23","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1784834530222}
+{"detail":{"club":"포웰안성","date":"2026-07-24","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1784834530234}
+{"detail":{"club":"포웰안성","date":"2026-07-24","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1784834530245}
+{"detail":{"club":"포웰안성","date":"2026-07-25","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1784834530256}
+{"detail":{"club":"포웰안성","date":"2026-07-25","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1784834530267}
+{"detail":{"club":"포웰안성","date":"2026-07-26","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1784834530280}
+{"detail":{"club":"포웰안성","date":"2026-07-26","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1784834530290}
+{"detail":{"club":"파인스톤","date":"2026-07-23","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1784834530304}
+{"detail":{"club":"파인스톤","date":"2026-07-23","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1784834530315}
+{"detail":{"club":"파인스톤","date":"2026-07-24","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"tab_create_fail","level":"ERROR","ts":1784834530330}
+{"detail":{"club":"파인스톤","date":"2026-07-24","error":"Tabs cannot be edited right now (user may be dragging a tab)."},"event":"fetch_fail","level":"ERROR","ts":1784834530340}
+{"detail":{"club":"파인스톤","date":"2026-07-25","error":"Frame with ID 0 was removed."},"event":"inject_fail","level":"ERROR","ts":1784834533790}
+{"detail":{"error":"No tab with id: 1060055923.","tabId":1060055923},"event":"tab_remove_fail","level":"WARN","ts":1784834533823}
+{"detail":{"club":"파인스톤","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784834533833}
+{"detail":{"club":"파인스톤","date":"2026-07-26","error":"Frame with ID 0 was removed."},"event":"inject_fail","level":"ERROR","ts":1784834537255}
+{"detail":{"error":"No tab with id: 1060055927.","tabId":1060055927},"event":"tab_remove_fail","level":"WARN","ts":1784834537274}
+{"detail":{"club":"파인스톤","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784834537288}
+{"detail":{"changes":319,"hadOldData":true,"totalSlots":952},"event":"detect_done","level":"INFO","ts":1784834649227}
+{"detail":{"newCnt":271,"priceCnt":48,"total":319},"event":"notify_sent","level":"INFO","ts":1784834649248}
+{"detail":{"commit":"c7c0aac","path":"logs/changes/2026-07-23.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784834651589}
+{"detail":{"changes":319,"elapsedMs":177504,"totalSlots":952,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784834651600}
