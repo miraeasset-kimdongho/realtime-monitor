@@ -2331,3 +2331,11 @@
 {"detail":{"newCnt":43,"priceCnt":0,"total":43},"event":"notify_sent","level":"INFO","ts":1785023704495}
 {"detail":{"commit":"956a5bf","path":"logs/changes/2026-07-25.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1785023706584}
 {"detail":{"changes":43,"elapsedMs":217380,"totalSlots":760,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1785023706595}
+{"detail":{"commit":"1943c96","path":"logs/system/2026-07-25.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1785023708896}
+{"detail":{"error":"Tabs cannot be edited right now (user may be dragging a tab).","tabId":1060118174},"event":"tab_remove_fail","level":"WARN","ts":1785023818544}
+{"detail":{"club":"여주신라","date":"2026-07-26","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1785023867458}
+{"detail":{"club":"여주신라","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1785023867472}
+{"detail":{"changes":70,"hadOldData":true,"totalSlots":829},"event":"detect_done","level":"INFO","ts":1785023909479}
+{"detail":{"newCnt":70,"priceCnt":0,"total":70},"event":"notify_sent","level":"INFO","ts":1785023909501}
+{"detail":{"commit":"4aefe2f","path":"logs/changes/2026-07-25.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1785023912368}
+{"detail":{"changes":70,"elapsedMs":227045,"totalSlots":829,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1785023912378}
