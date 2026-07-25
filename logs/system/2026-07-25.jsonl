@@ -1490,3 +1490,226 @@
 {"detail":{"newCnt":17,"priceCnt":0,"total":17},"event":"notify_sent","level":"INFO","ts":1784981759241}
 {"detail":{"commit":"b19c151","path":"logs/changes/2026-07-25.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784981761713}
 {"detail":{"changes":17,"elapsedMs":226144,"totalSlots":645,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784981761723}
+{"detail":{"commit":"20d5962","path":"logs/system/2026-07-25.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784981763840}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-25","2026-07-26","2026-07-27","2026-07-28"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784981836503}
+{"detail":{"club":"양지파인","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981838133}
+{"detail":{"club":"양지파인","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784981838148}
+{"detail":{"club":"양지파인","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981839765}
+{"detail":{"club":"양지파인","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784981839788}
+{"detail":{"club":"양지파인","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981841401}
+{"detail":{"club":"양지파인","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784981841416}
+{"detail":{"club":"양지파인","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981843035}
+{"detail":{"club":"양지파인","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784981843049}
+{"detail":{"club":"한림용인","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981844673}
+{"detail":{"club":"한림용인","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784981844689}
+{"detail":{"club":"한림용인","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981846306}
+{"detail":{"club":"한림용인","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784981846323}
+{"detail":{"club":"한림용인","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981847943}
+{"detail":{"club":"한림용인","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784981847974}
+{"detail":{"club":"한림용인","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981849601}
+{"detail":{"club":"한림용인","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784981849615}
+{"detail":{"club":"포웰안성","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981851239}
+{"detail":{"club":"포웰안성","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784981851256}
+{"detail":{"club":"포웰안성","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981852888}
+{"detail":{"club":"포웰안성","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784981852903}
+{"detail":{"club":"포웰안성","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981854528}
+{"detail":{"club":"포웰안성","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784981854551}
+{"detail":{"club":"포웰안성","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981856161}
+{"detail":{"club":"포웰안성","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784981856175}
+{"detail":{"club":"파인스톤","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981857800}
+{"detail":{"club":"파인스톤","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784981857815}
+{"detail":{"club":"파인스톤","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981859434}
+{"detail":{"club":"파인스톤","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784981859450}
+{"detail":{"club":"파인스톤","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981861068}
+{"detail":{"club":"파인스톤","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784981861084}
+{"detail":{"club":"파인스톤","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981862702}
+{"detail":{"club":"파인스톤","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784981862715}
+{"detail":{"club":"클럽72","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981864335}
+{"detail":{"club":"클럽72","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784981864350}
+{"detail":{"club":"클럽72","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981865968}
+{"detail":{"club":"클럽72","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784981865983}
+{"detail":{"club":"클럽72","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981867603}
+{"detail":{"club":"클럽72","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784981867617}
+{"detail":{"club":"클럽72","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981869241}
+{"detail":{"club":"클럽72","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784981869255}
+{"detail":{"club":"더크로스비","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981870877}
+{"detail":{"club":"더크로스비","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784981870898}
+{"detail":{"club":"더크로스비","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981872510}
+{"detail":{"club":"더크로스비","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784981872524}
+{"detail":{"club":"더크로스비","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981874145}
+{"detail":{"club":"더크로스비","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784981874168}
+{"detail":{"club":"더크로스비","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981875795}
+{"detail":{"club":"더크로스비","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784981875809}
+{"detail":{"club":"여주신라","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981877431}
+{"detail":{"club":"여주신라","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784981877455}
+{"detail":{"club":"여주신라","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981879065}
+{"detail":{"club":"여주신라","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784981879079}
+{"detail":{"club":"여주신라","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981880699}
+{"detail":{"club":"여주신라","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784981880712}
+{"detail":{"club":"여주신라","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981882335}
+{"detail":{"club":"여주신라","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784981882348}
+{"detail":{"club":"360도","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981883973}
+{"detail":{"club":"360도","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784981883987}
+{"detail":{"club":"360도","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981885607}
+{"detail":{"club":"360도","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784981885621}
+{"detail":{"club":"360도","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981887233}
+{"detail":{"club":"360도","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784981887246}
+{"detail":{"club":"360도","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784981888869}
+{"detail":{"club":"360도","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784981888883}
+{"detail":{"fetchFailCount":0,"hint":"로그인 만료 또는 사이트 구조 변경 가능성. ownergolf 로그인 상태를 확인하세요."},"event":"all_empty","level":"ERROR","ts":1784981888894}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":0},"event":"detect_done","level":"INFO","ts":1784981888909}
+{"detail":{"changes":0,"elapsedMs":52419,"totalSlots":0,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784981888920}
+{"detail":{"error":"Failed to fetch","path":"logs/system/2026-07-25.jsonl"},"event":"gh_get_exc","level":"ERROR","ts":1784981888936}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-25","2026-07-26","2026-07-27","2026-07-28"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784982135683}
+{"detail":{"club":"양지파인","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982137306}
+{"detail":{"club":"양지파인","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982137329}
+{"detail":{"club":"양지파인","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982138946}
+{"detail":{"club":"양지파인","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982138960}
+{"detail":{"club":"양지파인","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982140581}
+{"detail":{"club":"양지파인","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982140602}
+{"detail":{"club":"양지파인","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982142216}
+{"detail":{"club":"양지파인","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982142240}
+{"detail":{"club":"한림용인","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982143868}
+{"detail":{"club":"한림용인","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982143890}
+{"detail":{"club":"한림용인","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982145517}
+{"detail":{"club":"한림용인","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982145531}
+{"detail":{"club":"한림용인","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982147149}
+{"detail":{"club":"한림용인","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982147166}
+{"detail":{"club":"한림용인","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982148783}
+{"detail":{"club":"한림용인","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982148796}
+{"detail":{"club":"포웰안성","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982150420}
+{"detail":{"club":"포웰안성","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982150436}
+{"detail":{"club":"포웰안성","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982152056}
+{"detail":{"club":"포웰안성","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982152072}
+{"detail":{"club":"포웰안성","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982153692}
+{"detail":{"club":"포웰안성","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982153705}
+{"detail":{"club":"포웰안성","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982155326}
+{"detail":{"club":"포웰안성","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982155345}
+{"detail":{"club":"파인스톤","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982156960}
+{"detail":{"club":"파인스톤","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982156984}
+{"detail":{"club":"파인스톤","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982158595}
+{"detail":{"club":"파인스톤","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982158615}
+{"detail":{"club":"파인스톤","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982160234}
+{"detail":{"club":"파인스톤","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982160257}
+{"detail":{"club":"파인스톤","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982161871}
+{"detail":{"club":"파인스톤","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982161891}
+{"detail":{"club":"클럽72","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982163508}
+{"detail":{"club":"클럽72","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982163529}
+{"detail":{"club":"클럽72","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982165144}
+{"detail":{"club":"클럽72","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982165158}
+{"detail":{"club":"클럽72","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982166776}
+{"detail":{"club":"클럽72","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982166790}
+{"detail":{"club":"클럽72","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982168410}
+{"detail":{"club":"클럽72","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982168432}
+{"detail":{"club":"더크로스비","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982170062}
+{"detail":{"club":"더크로스비","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982170085}
+{"detail":{"club":"더크로스비","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982171711}
+{"detail":{"club":"더크로스비","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982171734}
+{"detail":{"club":"더크로스비","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982173347}
+{"detail":{"club":"더크로스비","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982173370}
+{"detail":{"club":"더크로스비","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982174988}
+{"detail":{"club":"더크로스비","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982175001}
+{"detail":{"club":"여주신라","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982176621}
+{"detail":{"club":"여주신라","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982176640}
+{"detail":{"club":"여주신라","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982178257}
+{"detail":{"club":"여주신라","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982178275}
+{"detail":{"club":"여주신라","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982179895}
+{"detail":{"club":"여주신라","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982179911}
+{"detail":{"club":"여주신라","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982181543}
+{"detail":{"club":"여주신라","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982181565}
+{"detail":{"club":"360도","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982183183}
+{"detail":{"club":"360도","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982183200}
+{"detail":{"club":"360도","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982184822}
+{"detail":{"club":"360도","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982184845}
+{"detail":{"club":"360도","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982186470}
+{"detail":{"club":"360도","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982186493}
+{"detail":{"club":"360도","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982188119}
+{"detail":{"club":"360도","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982188138}
+{"detail":{"fetchFailCount":0,"hint":"로그인 만료 또는 사이트 구조 변경 가능성. ownergolf 로그인 상태를 확인하세요."},"event":"all_empty","level":"ERROR","ts":1784982188149}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":0},"event":"detect_done","level":"INFO","ts":1784982188161}
+{"detail":{"changes":0,"elapsedMs":52489,"totalSlots":0,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784982188172}
+{"detail":{"error":"Failed to fetch","path":"logs/system/2026-07-25.jsonl"},"event":"gh_get_exc","level":"ERROR","ts":1784982188186}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-25","2026-07-26","2026-07-27","2026-07-28"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784982435680}
+{"detail":{"club":"양지파인","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982437293}
+{"detail":{"club":"양지파인","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982437308}
+{"detail":{"club":"양지파인","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982438928}
+{"detail":{"club":"양지파인","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982438951}
+{"detail":{"club":"양지파인","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982440565}
+{"detail":{"club":"양지파인","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982440585}
+{"detail":{"club":"양지파인","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982442200}
+{"detail":{"club":"양지파인","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982442223}
+{"detail":{"club":"한림용인","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982443849}
+{"detail":{"club":"한림용인","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982443864}
+{"detail":{"club":"한림용인","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982445484}
+{"detail":{"club":"한림용인","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982445507}
+{"detail":{"club":"한림용인","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982447130}
+{"detail":{"club":"한림용인","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982447154}
+{"detail":{"club":"한림용인","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982448766}
+{"detail":{"club":"한림용인","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982448794}
+{"detail":{"club":"포웰안성","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982450417}
+{"detail":{"club":"포웰안성","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982450430}
+{"detail":{"club":"포웰안성","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982452050}
+{"detail":{"club":"포웰안성","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982452072}
+{"detail":{"club":"포웰안성","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982453687}
+{"detail":{"club":"포웰안성","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982453711}
+{"detail":{"club":"포웰안성","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982455338}
+{"detail":{"club":"포웰안성","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982455356}
+{"detail":{"club":"파인스톤","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982459307}
+{"detail":{"club":"파인스톤","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982459335}
+{"detail":{"club":"클럽72","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784982493199}
+{"detail":{"club":"클럽72","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982493213}
+{"detail":{"club":"더크로스비","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784982522202}
+{"detail":{"club":"더크로스비","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982522217}
+{"detail":{"club":"더크로스비","date":"2026-07-26","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784982565197}
+{"detail":{"club":"더크로스비","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982565210}
+{"detail":{"club":"더크로스비","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982566799}
+{"detail":{"club":"더크로스비","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982566820}
+{"detail":{"club":"더크로스비","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982568438}
+{"detail":{"club":"더크로스비","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982568462}
+{"detail":{"club":"여주신라","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982570086}
+{"detail":{"club":"여주신라","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982570109}
+{"detail":{"club":"여주신라","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982571734}
+{"detail":{"club":"여주신라","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982571759}
+{"detail":{"club":"여주신라","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982573378}
+{"detail":{"club":"여주신라","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982573393}
+{"detail":{"club":"여주신라","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982575002}
+{"detail":{"club":"여주신라","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982575017}
+{"detail":{"club":"360도","date":"2026-07-25","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982576635}
+{"detail":{"club":"360도","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982576649}
+{"detail":{"club":"360도","date":"2026-07-26","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982578262}
+{"detail":{"club":"360도","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784982578285}
+{"detail":{"club":"360도","date":"2026-07-27","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982579909}
+{"detail":{"club":"360도","date":"2026-07-27"},"event":"empty_slots","level":"WARN","ts":1784982579922}
+{"detail":{"club":"360도","date":"2026-07-28","error":"Frame with ID 0 is showing error page"},"event":"inject_fail","level":"ERROR","ts":1784982581544}
+{"detail":{"club":"360도","date":"2026-07-28"},"event":"empty_slots","level":"WARN","ts":1784982581559}
+{"detail":{"changes":147,"hadOldData":true,"totalSlots":147},"event":"detect_done","level":"INFO","ts":1784982581572}
+{"detail":{"newCnt":147,"priceCnt":0,"total":147},"event":"notify_sent","level":"INFO","ts":1784982581587}
+{"detail":{"error":"Failed to fetch","path":"logs/changes/2026-07-25.jsonl"},"event":"gh_get_exc","level":"ERROR","ts":1784982581603}
+{"detail":{"changes":147,"elapsedMs":145933,"totalSlots":147,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784982581612}
+{"detail":{"error":"Failed to fetch","path":"logs/system/2026-07-25.jsonl"},"event":"gh_get_exc","level":"ERROR","ts":1784982581628}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-25","2026-07-26","2026-07-27","2026-07-28"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784982735680}
+{"detail":{"club":"한림용인","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784982770202}
+{"detail":{"club":"한림용인","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982770227}
+{"detail":{"club":"포웰안성","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784982798205}
+{"detail":{"club":"포웰안성","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784982798224}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-07-25","2026-07-26","2026-07-27","2026-07-28"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1784983332430}
+{"detail":{"club":"한림용인","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":true},"event":"scrape_issue","level":"WARN","ts":1784983367208}
+{"detail":{"club":"한림용인","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784983367226}
+{"detail":{"club":"포웰안성","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784983395198}
+{"detail":{"club":"포웰안성","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784983395213}
+{"detail":{"club":"파인스톤","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784983424207}
+{"detail":{"club":"파인스톤","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784983424220}
+{"detail":{"club":"클럽72","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784983452200}
+{"detail":{"club":"클럽72","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784983452215}
+{"detail":{"club":"더크로스비","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784983480205}
+{"detail":{"club":"더크로스비","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784983480218}
+{"detail":{"club":"더크로스비","date":"2026-07-26","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784983487193}
+{"detail":{"club":"더크로스비","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784983487205}
+{"detail":{"club":"여주신라","date":"2026-07-25","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784983508199}
+{"detail":{"club":"여주신라","date":"2026-07-25"},"event":"empty_slots","level":"WARN","ts":1784983508220}
+{"detail":{"club":"여주신라","date":"2026-07-26","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1784983515206}
+{"detail":{"club":"여주신라","date":"2026-07-26"},"event":"empty_slots","level":"WARN","ts":1784983515227}
+{"detail":{"changes":495,"hadOldData":true,"totalSlots":642},"event":"detect_done","level":"INFO","ts":1784983557210}
+{"detail":{"newCnt":495,"priceCnt":0,"total":495},"event":"notify_sent","level":"INFO","ts":1784983557231}
+{"detail":{"commit":"a44251b","path":"logs/changes/2026-07-25.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1784983560042}
+{"detail":{"changes":495,"elapsedMs":227640,"totalSlots":642,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1784983560051}
