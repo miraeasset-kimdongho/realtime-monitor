@@ -2075,3 +2075,19 @@
 {"detail":{"newCnt":100,"priceCnt":0,"total":100},"event":"notify_sent","level":"INFO","ts":1785265489915}
 {"detail":{"commit":"6b113f1","path":"logs/changes/2026-07-28.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1785265492644}
 {"detail":{"changes":100,"elapsedMs":20108521,"totalSlots":599,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1785265492656}
+{"detail":{"commit":"1fc14a8","path":"logs/system/2026-07-28.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1785265495543}
+{"detail":{"changes":200,"hadOldData":true,"totalSlots":781},"event":"detect_done","level":"INFO","ts":1785265528869}
+{"detail":{"newCnt":200,"priceCnt":0,"total":200},"event":"notify_sent","level":"INFO","ts":1785265528915}
+{"detail":{"path":"logs/changes/2026-07-28.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1785265530067}
+{"detail":{"path":"logs/changes/2026-07-28.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1785265531224}
+{"detail":{"body":"{\n  \"message\": \"logs/changes/2026-07-28.jsonl does not match 77b528441382caa39ebee2946196850f59d98b0a\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/changes/2026-07-28.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1785265532375}
+{"detail":{"changes":200,"elapsedMs":224924,"totalSlots":781,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1785265532389}
+{"detail":{"path":"logs/system/2026-07-28.jsonl","retry":1},"event":"gh_conflict_retry","level":"WARN","ts":1785265533539}
+{"detail":{"path":"logs/system/2026-07-28.jsonl","retry":2},"event":"gh_conflict_retry","level":"WARN","ts":1785265534707}
+{"detail":{"body":"{\n  \"message\": \"logs/system/2026-07-28.jsonl does not match bea6146e941875a2c78bd927c084139a205e0550\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\n  \"status\": \"409\"\n}\n","path":"logs/system/2026-07-28.jsonl","status":409},"event":"gh_push_fail","level":"ERROR","ts":1785265535312}
+{"detail":{"club":"여주신라","date":"2026-07-29","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1785265670860}
+{"detail":{"club":"여주신라","date":"2026-07-29"},"event":"empty_slots","level":"WARN","ts":1785265670893}
+{"detail":{"changes":15,"hadOldData":true,"totalSlots":796},"event":"detect_done","level":"INFO","ts":1785265712879}
+{"detail":{"newCnt":15,"priceCnt":0,"total":15},"event":"notify_sent","level":"INFO","ts":1785265712913}
+{"detail":{"commit":"5ae77f9","path":"logs/changes/2026-07-28.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1785265715278}
+{"detail":{"changes":15,"elapsedMs":231206,"totalSlots":796,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1785265715290}
