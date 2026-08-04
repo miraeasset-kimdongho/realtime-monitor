@@ -365,3 +365,21 @@
 {"detail":{"club":"여주신라","date":"2026-08-04"},"event":"empty_slots","level":"WARN","ts":1785831673436}
 {"detail":{"changes":0,"hadOldData":true,"totalSlots":707},"event":"detect_done","level":"INFO","ts":1785831722450}
 {"detail":{"changes":0,"elapsedMs":224072,"totalSlots":707,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1785831722476}
+{"detail":{"commit":"76886be","path":"logs/system/2026-08-04.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1785831724308}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-08-04","2026-08-05","2026-08-06","2026-08-07"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1785831798423}
+{"detail":{"club":"한림용인","date":"2026-08-04","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1785831833429}
+{"detail":{"club":"한림용인","date":"2026-08-04"},"event":"empty_slots","level":"WARN","ts":1785831833443}
+{"detail":{"club":"포웰안성","date":"2026-08-04","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1785831861426}
+{"detail":{"club":"포웰안성","date":"2026-08-04"},"event":"empty_slots","level":"WARN","ts":1785831861444}
+{"detail":{"club":"파인스톤","date":"2026-08-04","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1785831889434}
+{"detail":{"club":"파인스톤","date":"2026-08-04"},"event":"empty_slots","level":"WARN","ts":1785831889451}
+{"detail":{"club":"더크로스비","date":"2026-08-04","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1785831945428}
+{"detail":{"club":"더크로스비","date":"2026-08-04"},"event":"empty_slots","level":"WARN","ts":1785831945443}
+{"detail":{"club":"더크로스비","date":"2026-08-05","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1785831952439}
+{"detail":{"club":"더크로스비","date":"2026-08-05"},"event":"empty_slots","level":"WARN","ts":1785831952456}
+{"detail":{"club":"여주신라","date":"2026-08-04","error":"가격표(1인그린피) 미발견","loginHint":false},"event":"scrape_issue","level":"WARN","ts":1785831973425}
+{"detail":{"club":"여주신라","date":"2026-08-04"},"event":"empty_slots","level":"WARN","ts":1785831973441}
+{"detail":{"changes":121,"hadOldData":true,"totalSlots":827},"event":"detect_done","level":"INFO","ts":1785832022442}
+{"detail":{"newCnt":121,"priceCnt":0,"total":121},"event":"notify_sent","level":"INFO","ts":1785832022476}
+{"detail":{"commit":"6887e2b","path":"logs/changes/2026-08-04.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1785832024444}
+{"detail":{"changes":121,"elapsedMs":226035,"totalSlots":827,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1785832024457}
