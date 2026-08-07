@@ -223,3 +223,9 @@
 {"detail":{"newCnt":11,"priceCnt":1,"total":12},"event":"notify_sent","level":"INFO","ts":1786072090160}
 {"detail":{"commit":"20417c1","path":"logs/changes/2026-08-07.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1786072091892}
 {"detail":{"changes":12,"elapsedMs":225273,"totalSlots":1158,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1786072091912}
+{"detail":{"commit":"bf3e7eb","path":"logs/system/2026-08-07.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1786072093918}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-08-07","2026-08-08","2026-08-09","2026-08-10"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1786072166642}
+{"detail":{"changes":10,"hadOldData":true,"totalSlots":1167},"event":"detect_done","level":"INFO","ts":1786072390130}
+{"detail":{"newCnt":9,"priceCnt":1,"total":10},"event":"notify_sent","level":"INFO","ts":1786072390159}
+{"detail":{"commit":"7460219","path":"logs/changes/2026-08-07.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1786072392037}
+{"detail":{"changes":10,"elapsedMs":225406,"totalSlots":1167,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1786072392047}
