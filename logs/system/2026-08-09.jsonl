@@ -1946,3 +1946,72 @@
 {"detail":{"fetchFailCount":32,"hint":"로그인 만료 또는 사이트 구조 변경 가능성. ownergolf 로그인 상태를 확인하세요."},"event":"all_empty","level":"ERROR","ts":1786274492890}
 {"detail":{"changes":0,"hadOldData":true,"totalSlots":0},"event":"detect_done","level":"INFO","ts":1786274492900}
 {"detail":{"changes":0,"elapsedMs":710,"totalSlots":0,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1786274492912}
+{"detail":{"commit":"2f356ef","path":"logs/system/2026-08-09.jsonl"},"event":"gh_push_ok","level":"INFO","ts":1786274494867}
+{"detail":{"courses":["양지파인","한림용인","포웰안성","파인스톤","클럽72","더크로스비","여주신라","360도"],"dates":["2026-08-09","2026-08-10","2026-08-11","2026-08-12"],"trigger":"자동"},"event":"runCheck_start","level":"INFO","ts":1786274792200}
+{"detail":{"club":"양지파인","date":"2026-08-09","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792211}
+{"detail":{"club":"양지파인","date":"2026-08-09","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792221}
+{"detail":{"club":"양지파인","date":"2026-08-10","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792231}
+{"detail":{"club":"양지파인","date":"2026-08-10","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792241}
+{"detail":{"club":"양지파인","date":"2026-08-11","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792251}
+{"detail":{"club":"양지파인","date":"2026-08-11","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792261}
+{"detail":{"club":"양지파인","date":"2026-08-12","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792272}
+{"detail":{"club":"양지파인","date":"2026-08-12","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792282}
+{"detail":{"club":"한림용인","date":"2026-08-09","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792293}
+{"detail":{"club":"한림용인","date":"2026-08-09","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792302}
+{"detail":{"club":"한림용인","date":"2026-08-10","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792313}
+{"detail":{"club":"한림용인","date":"2026-08-10","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792322}
+{"detail":{"club":"한림용인","date":"2026-08-11","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792332}
+{"detail":{"club":"한림용인","date":"2026-08-11","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792342}
+{"detail":{"club":"한림용인","date":"2026-08-12","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792352}
+{"detail":{"club":"한림용인","date":"2026-08-12","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792363}
+{"detail":{"club":"포웰안성","date":"2026-08-09","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792375}
+{"detail":{"club":"포웰안성","date":"2026-08-09","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792384}
+{"detail":{"club":"포웰안성","date":"2026-08-10","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792396}
+{"detail":{"club":"포웰안성","date":"2026-08-10","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792408}
+{"detail":{"club":"포웰안성","date":"2026-08-11","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792419}
+{"detail":{"club":"포웰안성","date":"2026-08-11","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792429}
+{"detail":{"club":"포웰안성","date":"2026-08-12","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792442}
+{"detail":{"club":"포웰안성","date":"2026-08-12","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792450}
+{"detail":{"club":"파인스톤","date":"2026-08-09","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792462}
+{"detail":{"club":"파인스톤","date":"2026-08-09","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792472}
+{"detail":{"club":"파인스톤","date":"2026-08-10","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792483}
+{"detail":{"club":"파인스톤","date":"2026-08-10","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792492}
+{"detail":{"club":"파인스톤","date":"2026-08-11","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792503}
+{"detail":{"club":"파인스톤","date":"2026-08-11","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792513}
+{"detail":{"club":"파인스톤","date":"2026-08-12","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792525}
+{"detail":{"club":"파인스톤","date":"2026-08-12","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792535}
+{"detail":{"club":"클럽72","date":"2026-08-09","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792549}
+{"detail":{"club":"클럽72","date":"2026-08-09","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792559}
+{"detail":{"club":"클럽72","date":"2026-08-10","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792569}
+{"detail":{"club":"클럽72","date":"2026-08-10","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792580}
+{"detail":{"club":"클럽72","date":"2026-08-11","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792591}
+{"detail":{"club":"클럽72","date":"2026-08-11","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792600}
+{"detail":{"club":"클럽72","date":"2026-08-12","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792610}
+{"detail":{"club":"클럽72","date":"2026-08-12","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792621}
+{"detail":{"club":"더크로스비","date":"2026-08-09","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792631}
+{"detail":{"club":"더크로스비","date":"2026-08-09","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792641}
+{"detail":{"club":"더크로스비","date":"2026-08-10","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792651}
+{"detail":{"club":"더크로스비","date":"2026-08-10","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792662}
+{"detail":{"club":"더크로스비","date":"2026-08-11","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792673}
+{"detail":{"club":"더크로스비","date":"2026-08-11","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792682}
+{"detail":{"club":"더크로스비","date":"2026-08-12","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792694}
+{"detail":{"club":"더크로스비","date":"2026-08-12","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792704}
+{"detail":{"club":"여주신라","date":"2026-08-09","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792715}
+{"detail":{"club":"여주신라","date":"2026-08-09","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792725}
+{"detail":{"club":"여주신라","date":"2026-08-10","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792736}
+{"detail":{"club":"여주신라","date":"2026-08-10","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792747}
+{"detail":{"club":"여주신라","date":"2026-08-11","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792759}
+{"detail":{"club":"여주신라","date":"2026-08-11","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792769}
+{"detail":{"club":"여주신라","date":"2026-08-12","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792780}
+{"detail":{"club":"여주신라","date":"2026-08-12","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792791}
+{"detail":{"club":"360도","date":"2026-08-09","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792802}
+{"detail":{"club":"360도","date":"2026-08-09","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792813}
+{"detail":{"club":"360도","date":"2026-08-10","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792824}
+{"detail":{"club":"360도","date":"2026-08-10","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792832}
+{"detail":{"club":"360도","date":"2026-08-11","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792843}
+{"detail":{"club":"360도","date":"2026-08-11","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792854}
+{"detail":{"club":"360도","date":"2026-08-12","error":"No current window"},"event":"tab_create_fail","level":"ERROR","ts":1786274792865}
+{"detail":{"club":"360도","date":"2026-08-12","error":"No current window"},"event":"fetch_fail","level":"ERROR","ts":1786274792874}
+{"detail":{"fetchFailCount":32,"hint":"로그인 만료 또는 사이트 구조 변경 가능성. ownergolf 로그인 상태를 확인하세요."},"event":"all_empty","level":"ERROR","ts":1786274792884}
+{"detail":{"changes":0,"hadOldData":true,"totalSlots":0},"event":"detect_done","level":"INFO","ts":1786274792895}
+{"detail":{"changes":0,"elapsedMs":707,"totalSlots":0,"trigger":"자동"},"event":"runCheck_done","level":"INFO","ts":1786274792906}
